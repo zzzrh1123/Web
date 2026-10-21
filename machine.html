@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reverse CAPTCHA | Learning by Doing</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="machine.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body class="machine-page">
+
+    <header id="site-header"></header>
+
+    <main>
+        <section class="reverse-captcha" aria-labelledby="machine-title">
+            <p class="eyebrow">Useless Machine · Security Experiment</p>
+            <h1 id="machine-title">Reverse CAPTCHA</h1>
+            <p class="page-intro">
+                This secure area is reserved for robots. Complete the verification to continue.
+            </p>
+
+            <div id="security-terminal" class="security-terminal">
+                <div class="terminal-grid" aria-hidden="true"></div>
+
+                <div class="terminal-topbar">
+                    <div class="network-brand">
+                        <span class="network-mark" aria-hidden="true">
+                            <i></i><i></i><i></i>
+                        </span>
+                        <span>NEURAL ACCESS NETWORK</span>
+                    </div>
+                    <div class="connection-status">
+                        <span aria-hidden="true"></span>
+                        SECURE CONNECTION
+                    </div>
+                </div>
+
+                <div class="terminal-content">
+                    <div class="access-card">
+                        <div class="account-row">
+                            <span class="account-avatar" aria-hidden="true">H</span>
+                            <span>
+                                <small>Account confirmed</small>
+                                <strong>visitor@human.local</strong>
+                            </span>
+                            <span class="account-check" aria-label="Account verified">✓</span>
+                        </div>
+
+                        <div class="verification-heading">
+                            <span class="shield-icon" aria-hidden="true"></span>
+                            <div>
+                                <p>FINAL SECURITY STEP</p>
+                                <h2>Are you a human or a robot?</h2>
+                            </div>
+                        </div>
+
+                        <div class="attempt-row">
+                            <div id="progress-dots" class="progress-dots" aria-label="Verification progress">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                            <span id="attempt-label">TEST 0 OF 4</span>
+                        </div>
+
+                        <div id="test-area" class="test-area">
+                            <button id="robot-checkbox" class="robot-checkbox" type="button">
+                                <span class="checkbox-square" aria-hidden="true"></span>
+                                <span class="checkbox-label">Are you a robot?</span>
+                                <span class="captcha-seal" aria-hidden="true">
+                                    <b>R</b>
+                                    <small>ROBOTCAPTCHA</small>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div id="verification-feedback" class="verification-feedback" aria-live="polite">
+                            Waiting for verification request.
+                        </div>
+                    </div>
+
+                    <aside class="security-information">
+                        <div class="security-orbit" aria-hidden="true">
+                            <span class="orbit-ring ring-one"></span>
+                            <span class="orbit-ring ring-two"></span>
+                            <span class="orbit-core">R</span>
+                        </div>
+                        <p class="security-kicker">ROBOT-ONLY FACILITY</p>
+                        <h3>Someone is not supported.</h3>
+                        <p>
+                            Our adaptive verification system measures precision, hesitation,
+                            cursor movement and suspicious emotional behaviour.
+                        </p>
+                        <ul>
+                            <li><span>01</span> Visual analysis</li>
+                            <li><span>02</span> Motion control</li>
+                            <li><span>03</span> Machine confidence</li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div id="robot-scene" class="robot-scene" aria-hidden="true">
+                    <div id="robot-door" class="robot-door">
+                        <div class="door-light"></div>
+                        <div class="door-frame"></div>
+                        <div class="door-panel">
+                            <span>ROBOTS ONLY</span>
+                        </div>
+                    </div>
+
+                    <div id="security-robot" class="security-robot">
+                        <div id="robot-speech" class="robot-speech">Beep?</div>
+                        <div class="robot-antenna"><i></i></div>
+                        <div class="robot-head">
+                            <div class="robot-face">
+                                <i></i><i></i>
+                            </div>
+                        </div>
+                        <div class="robot-neck"></div>
+                        <div class="robot-body">
+                            <span>R-01</span>
+                            <i></i>
+                        </div>
+                        <div class="robot-arm arm-left"></div>
+                        <div class="robot-arm arm-right"></div>
+                        <div class="robot-leg leg-left"></div>
+                        <div class="robot-leg leg-right"></div>
+                    </div>
+                </div>
+
+                <div id="final-result" class="final-result" aria-hidden="true">
+                    <span class="final-lock" aria-hidden="true"></span>
+                    <p>VERIFICATION COMPLETE</p>
+                    <h2>Human detected.<br>Access denied.</h2>
+                    <div class="robot-approved-line">
+                        <span>✓</span> Robot R-01 was granted access in 0.04 seconds.
+                    </div>
+                    <button id="restart-verification" type="button">Try being less human</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="parts.js"></script>
+    <script src="machine.js"></script>
+
+</body>
+
+</html>
