@@ -38,6 +38,13 @@ function setTheme(theme) {
 setTheme(preferredTheme());
 
 load("nav.html", "site-header").then(() => {
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll("#site-header nav a[href]").forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.setAttribute("aria-current", "page");
+        }
+    });
+
     const themeButton = document.getElementById("theme-toggle");
 
     if (!themeButton) {

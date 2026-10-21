@@ -4,24 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Learning by Doing</title>
+    <meta name="description" content="A student-made shortcut hub for official AI tools and practical study use cases.">
+    <title>AI Toolkit | Learning by Doing</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 
 <body class="home-page">
+    <a class="ai-skip-link" href="#main-content">Skip to main content</a>
     <header id="site-header"></header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-copy">
-                <p class="eyebrow">Learning by doing</p>
-                <h1>Welcome to My First HTML Page</h1>
-                <p>This is where I collect ideas, projects and a few words that inspire me.</p>
-                <a class="button-link" href="quotes.html">Explore favorite quotes</a>
+    <main class="ai-home ai-landing" id="main-content" tabindex="-1">
+        <section class="ai-hero" aria-labelledby="home-title">
+            <div class="ai-hero-copy">
+                <p class="eyebrow">A student-made AI shortcut hub</p>
+                <h1 id="home-title">The right AI tool is one click away.</h1>
+                <p>Choose what you want to do, open the real website, and spend less time searching for the right link.</p>
+                <div class="ai-hero-actions">
+                    <a class="ai-primary-link" href="tools.html">Browse all tools <span aria-hidden="true">→</span></a>
+                    <a class="ai-secondary-link" href="uses.html">Explore AI uses <span aria-hidden="true">→</span></a>
+                </div>
+                <p class="ai-hero-note">Nine official destinations · Short guidance for students</p>
             </div>
 
-            <img src="fun.png" alt="Colorful FUN illustration">
+            <nav class="ai-task-panel" aria-label="Browse tools by task">
+                <p class="ai-panel-label">WHAT ARE YOU WORKING ON?</p>
+                <a class="ai-task-shortcut" href="tools.html?category=writing"><span class="ai-task-icon" aria-hidden="true">✎</span><span><strong>Writing &amp; everyday tasks</strong><small>Draft, revise and brainstorm</small></span><span aria-hidden="true">→</span></a>
+                <a class="ai-task-shortcut" href="tools.html?category=research"><span class="ai-task-icon" aria-hidden="true">▤</span><span><strong>Reading &amp; research</strong><small>Explore notes and documents</small></span><span aria-hidden="true">→</span></a>
+                <a class="ai-task-shortcut" href="tools.html?category=coding"><span class="ai-task-icon" aria-hidden="true">⌘</span><span><strong>Coding &amp; reasoning</strong><small>Explain steps and debug ideas</small></span><span aria-hidden="true">→</span></a>
+                <a class="ai-task-shortcut" href="tools.html?category=creative"><span class="ai-task-icon" aria-hidden="true">✳</span><span><strong>Images &amp; creative work</strong><small>Develop visual concepts</small></span><span aria-hidden="true">→</span></a>
+            </nav>
+        </section>
+
+        <section class="ai-quick-launch" aria-labelledby="quick-launch-title">
+            <div class="ai-section-heading">
+                <div>
+                    <p class="eyebrow">Quick launch</p>
+                    <h2 id="quick-launch-title">Go straight to the official site.</h2>
+                    <p>Choose an icon to open the provider's website in a new tab. Need more context? <a href="tools.html">Compare the tools first.</a></p>
+                </div>
+            </div>
+            <div class="ai-launch-grid">
+                <a class="ai-launch-link brand-doubao" href="https://www.doubao.com/chat/" target="_blank" rel="noopener noreferrer"><span class="ai-launch-icon"><img src="assets/brands/doubao.png" alt=""></span><strong>Doubao</strong><span class="ai-visually-hidden">Official website. Opens in a new tab.</span></a>
+                <a class="ai-launch-link brand-kimi" href="https://www.kimi.com/" target="_blank" rel="noopener noreferrer"><span class="ai-launch-icon"><img src="assets/brands/kimi.png" alt=""></span><strong>Kimi</strong><span class="ai-visually-hidden">Official website. Opens in a new tab.</span></a>
+                <a class="ai-launch-link brand-zhipu" href="https://chatglm.cn/" target="_blank" rel="noopener noreferrer"><span class="ai-launch-icon"><img src="assets/brands/chatglm.png" alt=""></span><strong>ChatGLM</strong><span class="ai-visually-hidden">Official website. Opens in a new tab.</span></a>
+                <a class="ai-launch-link brand-wenxin" href="https://wenxin.baidu.com/" target="_blank" rel="noopener noreferrer"><span class="ai-launch-icon"><img src="assets/brands/ernie-bot.png" alt=""></span><strong>ERNIE Bot</strong><span class="ai-visually-hidden">Official website. Opens in a new tab.</span></a>
+                <a class="ai-launch-link brand-deepseek" href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer"><span class="ai-launch-icon"><img src="assets/brands/deepseek.png" alt=""></span><strong>DeepSeek</strong><span class="ai-visually-hidden">Official website. Opens in a new tab.</span></a>
+                <a class="ai-launch-link brand-qwen" href="https://www.qianwen.com/" target="_blank" rel="noopener noreferrer"><span class="ai-launch-icon"><img src="assets/brands/qwen.png" alt=""></span><strong>Qwen</strong><span class="ai-visually-hidden">Official website. Opens in a new tab.</span></a>
+                <a class="ai-launch-link brand-yuanbao" href="https://yuanbao.tencent.com/" target="_blank" rel="noopener noreferrer"><span class="ai-launch-icon"><img src="assets/brands/yuanbao.png" alt=""></span><strong>Yuanbao</strong><span class="ai-visually-hidden">Official website. Opens in a new tab.</span></a>
+                <a class="ai-launch-link brand-chatgpt" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer"><span class="ai-launch-icon"><img src="assets/brands/chatgpt.png" alt=""></span><strong>ChatGPT</strong><span class="ai-visually-hidden">Official website. Opens in a new tab.</span></a>
+                <a class="ai-launch-link brand-gemini" href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer"><span class="ai-launch-icon"><img src="assets/brands/gemini.png" alt=""></span><strong>Gemini</strong><span class="ai-visually-hidden">Official website. Opens in a new tab.</span></a>
+            </div>
         </section>
     </main>
 
