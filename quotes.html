@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,74 +7,99 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
-
 <body class="quotes-page">
     <header id="site-header"></header>
-
     <main>
-        <p class="eyebrow">Words to remember</p>
-        <h1>Favorite Quotes</h1>
-        <p class="page-intro">A few ideas about imagination, courage and meaningful work.</p>
-
-        <div class="grid">
+        <section class="quote-hero" aria-labelledby="quotes-heading">
+            <div class="quote-hero-content">
+                <p class="eyebrow">Words to remember</p>
+                <h1 id="quotes-heading">Favorite Quotes</h1>
+                <p class="quote-hero-line" id="featured-quote">Imagination is more important than knowledge.</p>
+                <p class="quote-hero-author" id="featured-author">Albert Einstein</p>
+                <button class="quote-next" id="next-quote" type="button">Show another quote</button>
+            </div>
+            <img src="fun.png" alt="Purple mountain landscape beneath a pink sky">
+        </section>
+        <p class="page-intro">Fifteen lines about imagination, curiosity, courage and meaningful work. Explore a new one above whenever you like.</p>
+        <div class="grid" id="quote-grid">
             <article class="quote highlight">
-                <blockquote>
-                    <p>Imagination is more important than knowledge.</p>
-                </blockquote>
-                <footer>
-                    <cite>Albert Einstein</cite>, <span class="source">Source</span>
-                </footer>
+                <blockquote><p>Imagination is more important than knowledge.</p></blockquote>
+                <footer><span class="quote-author">Albert Einstein</span></footer>
             </article>
 
             <article class="quote">
-                <blockquote>
-                    <p>To be, or not to be: that is the question.</p>
-                </blockquote>
-                <footer>
-                    <cite>William Shakespeare</cite>, <span class="source">Source</span>
-                </footer>
+                <blockquote><p>To be or not to be—that is the question.</p></blockquote>
+                <footer><span class="quote-author">William Shakespeare, Hamlet</span> · <a href="https://www.folger.edu/explore/shakespeares-works/hamlet/read/" target="_blank" rel="noopener noreferrer">Read source</a></footer>
             </article>
 
             <article class="quote">
-                <blockquote>
-                    <p>A journey of a thousand miles begins with a single step.</p>
-                </blockquote>
-                <footer>
-                    <cite>Lao Tzu</cite>, <span class="source">Source</span>
-                </footer>
+                <blockquote><p>A journey of a thousand miles begins with a single step.</p></blockquote>
+                <footer><span class="quote-author">Lao Tzu</span></footer>
             </article>
 
             <article class="quote">
-                <blockquote>
-                    <p>Whether you think you can, or you think you can't—you're right.</p>
-                </blockquote>
-                <footer>
-                    <cite>Henry Ford</cite>, <span class="source">Source</span>
-                </footer>
+                <blockquote><p>Whether you think you can, or you think you can’t—you’re right.</p></blockquote>
+                <footer><span class="quote-author">Henry Ford</span></footer>
             </article>
 
             <article class="quote">
-                <blockquote>
-                    <p>The only way to do great work is to love what you do.</p>
-                </blockquote>
-                <footer>
-                    <cite>Steve Jobs</cite>, <span class="source">Source</span>
-                </footer>
+                <blockquote><p>The only way to do great work is to love what you do.</p></blockquote>
+                <footer><span class="quote-author">Steve Jobs</span></footer>
             </article>
 
             <article class="quote">
-                <blockquote>
-                    <p>The best way to predict the future is to invent it.</p>
-                </blockquote>
-                <footer>
-                    <cite>Alan Kay</cite>, <span class="source">Source</span>
-                </footer>
+                <blockquote><p>The best way to predict the future is to invent it.</p></blockquote>
+                <footer><span class="quote-author">Alan Kay</span></footer>
+            </article>
+
+            <article class="quote">
+                <blockquote><p>All the world’s a stage.</p></blockquote>
+                <footer><span class="quote-author">William Shakespeare, As You Like It</span> · <a href="https://www.folger.edu/explore/shakespeares-works/as-you-like-it/read/2/7/" target="_blank" rel="noopener noreferrer">Read source</a></footer>
+            </article>
+
+            <article class="quote">
+                <blockquote><p>The course of true love never did run smooth.</p></blockquote>
+                <footer><span class="quote-author">William Shakespeare, A Midsummer Night’s Dream</span> · <a href="https://www.folger.edu/explore/shakespeares-works/a-midsummer-nights-dream/quotes/" target="_blank" rel="noopener noreferrer">Read source</a></footer>
+            </article>
+
+            <article class="quote">
+                <blockquote><p>Love all, trust a few.</p></blockquote>
+                <footer><span class="quote-author">William Shakespeare, All’s Well That Ends Well</span> · <a href="https://www.folger.edu/explore/shakespeares-works/alls-well-that-ends-well/read/" target="_blank" rel="noopener noreferrer">Read source</a></footer>
+            </article>
+
+            <article class="quote">
+                <blockquote><p>What’s in a name?</p></blockquote>
+                <footer><span class="quote-author">William Shakespeare, Romeo and Juliet</span> · <a href="https://www.folger.edu/explore/shakespeares-works/romeo-and-juliet/read/2-2/" target="_blank" rel="noopener noreferrer">Read source</a></footer>
+            </article>
+
+            <article class="quote">
+                <blockquote><p>We are such stuff as dreams are made on.</p></blockquote>
+                <footer><span class="quote-author">William Shakespeare, The Tempest</span> · <a href="https://www.folger.edu/explore/shakespeares-works/the-tempest/read/4/1/" target="_blank" rel="noopener noreferrer">Read source</a></footer>
+            </article>
+
+            <article class="quote">
+                <blockquote><p>Begin at the beginning, and go on till you come to the end: then stop.</p></blockquote>
+                <footer><span class="quote-author">Lewis Carroll, Alice’s Adventures in Wonderland</span> · <a href="https://www.gutenberg.org/cache/epub/11/pg11-images.html" target="_blank" rel="noopener noreferrer">Read source</a></footer>
+            </article>
+
+            <article class="quote">
+                <blockquote><p>Till this moment I never knew myself.</p></blockquote>
+                <footer><span class="quote-author">Jane Austen, Pride and Prejudice</span> · <a href="https://www.gutenberg.org/cache/epub/1342/pg1342-images.html" target="_blank" rel="noopener noreferrer">Read source</a></footer>
+            </article>
+
+            <article class="quote">
+                <blockquote><p>It was the best of times, it was the worst of times.</p></blockquote>
+                <footer><span class="quote-author">Charles Dickens, A Tale of Two Cities</span> · <a href="https://www.gutenberg.org/files/98/98-h/98-h.htm" target="_blank" rel="noopener noreferrer">Read source</a></footer>
+            </article>
+
+            <article class="quote">
+                <blockquote><p>Simplify, simplify.</p></blockquote>
+                <footer><span class="quote-author">Henry David Thoreau, Walden</span> · <a href="https://www.gutenberg.org/files/205/205-h/205-h.htm" target="_blank" rel="noopener noreferrer">Read source</a></footer>
             </article>
         </div>
     </main>
-
     <footer id="site-footer"></footer>
     <script src="parts.js"></script>
+    <script src="quotes.js"></script>
 </body>
-
 </html>
