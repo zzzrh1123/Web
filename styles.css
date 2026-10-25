@@ -300,10 +300,6 @@ p {
 }
 
 .quote-hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(240px, 0.8fr);
-    align-items: center;
-    gap: 24px;
     margin-bottom: 30px;
     overflow: hidden;
     color: #f8faff;
@@ -312,6 +308,7 @@ p {
 }
 
 .quote-hero-content {
+    max-width: 900px;
     padding: clamp(24px, 4vw, 42px);
 }
 
@@ -320,15 +317,20 @@ p {
 }
 
 .quote-hero h1 {
-    font-size: clamp(32px, 4vw, 46px);
+    font-size: clamp(26px, 3vw, 34px);
 }
 
 .quote-hero-line {
-    min-height: 2.5em;
-    margin-bottom: 8px;
-    font-size: clamp(20px, 2.5vw, 29px);
+    max-width: 780px;
+    min-height: 2em;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(27px, 3.2vw, 38px);
+    font-style: italic;
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1.3;
+    border-left: 4px solid #cbd4ff;
 }
 
 .quote-hero-author {
@@ -344,13 +346,6 @@ p {
 .quote-next:hover {
     color: #17213e;
     background: #ffffff;
-}
-
-.quote-hero img {
-    width: 100%;
-    height: 100%;
-    max-height: 350px;
-    object-fit: cover;
 }
 
 .grid {
@@ -569,14 +564,6 @@ html[data-theme="dark"] #site-footer {
 
     .hero {
         grid-template-columns: 1fr;
-    }
-
-    .quote-hero {
-        grid-template-columns: 1fr;
-    }
-
-    .quote-hero img {
-        max-height: 230px;
     }
 
     .hero img {
