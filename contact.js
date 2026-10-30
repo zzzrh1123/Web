@@ -12,5 +12,4 @@ contactForm.addEventListener("submit", event => {
 
     document.getElementById("contact-status").textContent =
         "Your email app is opening. Please send the message there to finish.";
-    window.location.href = `mailto:X20250020@hibiuh.edu.cn?subject=${subject}&body=${body}`;
-});
+window.location.href = `mailto:X20250020@stu.hibiuh.edu.cn?subject=${subject}&body=${body}`;});
