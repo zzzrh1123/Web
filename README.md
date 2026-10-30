@@ -1,10 +1,8 @@
-# Learning by Doing — classroom website
+# Learning by Doing
+This website was created as part of the Web Technologies course. It shows how my web development skills developed throughout the course.
 
-This is the Web Technologies learning site, restored from the earlier image-led homepage and extended for the course assignment. It is separate from the Campus Desk personal project in `../campus-desk/`.
+At the beginning, I followed the teacher’s lessons step by step and wrote the basic code myself. This helped me learn the foundations of HTML, CSS and JavaScript, including page structure, navigation, styling and simple interactions.
 
-Pages: Home, Quotes, Projects, Reverse CAPTCHA Machine, and Contact. The navigation and footer are shared HTML fragments loaded by `parts.js`. The quotes page has 15 cards and a random featured quote. The Machine is the interactive class experiment.
+Later, I used AI tools to improve the visual design and responsive layout. I reviewed and adjusted the generated code to understand how it worked. I also added interactive features, including a creative Useless Machine based on a reverse CAPTCHA.
 
-To preview locally, open this folder in VS Code and use **Go Live**, or run `python3 -m http.server 5500` here and open `http://127.0.0.1:5500/`. The shared fragments need an HTTP server; opening an HTML file with `file://` prevents `fetch()` from loading them.
-
-Original GitHub repository: https://github.com/zzzrh1123/Web
-Live class site: https://zzzrh1123.github.io/Web/
+This learning website is separate from my personal Campus Desk project.
